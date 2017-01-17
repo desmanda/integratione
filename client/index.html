@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IntegrationShilfe</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-reset.css" rel="stylesheet">
+
+    <!-- Fonts from Google -->
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Montserrat|Lato'>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+
+    <!-- library css -->
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/spinner.css"/>
+
+    <!-- our css-->
+    <link rel="stylesheet" href="css/bootstrap-distant.css"/>
+    <link rel="stylesheet" href="css/distant.css"/>
+
+    <!-- library scripts -->
+    <script type="text/javascript" src="lib/angular/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-route/angular-route.min.js"></script>
+    <script type="text/javascript" src="lib/angular-animate/angular-animate.min.js"></script>
+    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap.min.js"></script>
+     <script type="text/javascript" src="lib/d3.v3/index.js"></script>
+    <script type="text/javascript" src="lib/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    
+
+    <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controller/homeCrtl.js"></script>
+    <script type="text/javascript" src="js/controller/aboutCrtl.js"></script>
+    <script type="text/javascript" src="js/controller/demoCrtl.js"></script>
+    <script type="text/javascript" src="js/controller/howCrtl.js"></script>
+ <script type="text/javascript" src="js/controller/test.js"></script>
+</head>
+
+<body class="ng-cloak" ng-app="ViZu" ng-cloak>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- change link of Infex later !!!!-->
+            <a class="navbar-brand" href="#home"><img src="img/IHPALogosmall.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" ng-controller="activeNav" id="myNav">
+            <ul class="nav navbar-nav navbar-right">
+                <li ng-class="{ active: isActive('/home')}"><a href="#home"><span
+                        class="glyphicon glyphicon-home"></span></a></li>
+                 <li ng-class="{ active: isActive('/demo')}"><a href="#demo">Über uns</a></li>
+                 <li ng-class="{ active: isActive('/how')}"><a href="#how">Kontakt</a></li> 
+                 <li ng-class="{ active: isActive('/about')}"><a href="#about">Zusatzinfo</a></li>
+            </ul>
+           <!-- <div class="col-sm-6 col-md-6">
+                <form class="navbar-form" role="search" ng-controller="Main">
+                    <div class="input-group">
+                        <input type="text" placeholder="what are you searching for ?" ng-model='myquery'
+                               class="form-control" ng-keypress="EnterKeyPressed($event)"/>
+                        <div class="input-group-btn">
+                            <button uib-popover="Enter text please !" popover-placement="bottom" popover-is-open="check"
+                                    class="btn btn-default" ng-click="search()"><i
+                                    class="glyphicon glyphicon-search"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+             add later for login or feedback an icon here !!
+      <ul class="nav navbar-nav navbar-right">
+                <li ng-click="openfeed()"> <span class="glyphicon glyphicon-log-in"></span></li>
+                </ul>-->
+        </div>
+    </div>
+
+</nav>
+
+<section class="mycontainer">
+
+    <ng-view></ng-view>
+
+</section>
+<footer>  
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-md-4  myfooter">
+                    <img src="img/gear.png" alt="Team">
+               <h4>Team</h4>
+                    <h6><strong>Mr.One</strong>, IntegrationShilfe</h6>
+                    <h6><strong>Mr.Two</strong>, IntegrationShilfe</h6> 
+                    <h6><strong>Mr.Three</strong>, IntegrationShilfe</h6>  
+                </div>
+                <div class="col-xs-6 col-md-4  myfooter">
+                    <img src="img/chat.png" alt="Contact">
+                    <h4>Contact</h4>
+                    <h6> email_from_domain_name.De</h6>
+                    <h6>email_personal.De</h6>
+                    <!-- here you put the logo of the organization !! -->
+                      <!-- or add here the address of the organization if it is better !! -->                   
+
+                    <img src="img/IHPALogo.jpg" alt="INTEGRATIONSHILFE logo">   
+                </div>
+                <div class=" col-xs-6 col-md-4  myfooter">
+                     <img src="img/cursor.png" alt="followUs">
+                <h4>Follow Us On</h4>
+                    <div class="myicons">
+                        <a href="www.google.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                         <a href="www.google.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                        <a href="https://www.youtube.com/watch?v=Zor2X0uoKsM"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div> 
+             <p class="text-center"><strong>INTEGRATIONSHILFE@Copyright 2017</strong></p>
+            </div>
+                
+    </footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,315 @@
+.actions
+{
+float:right;
+opacity:1;
+    
+}
+.middle {
+margin:auto;
+}
+.menu-left
+{   float:left;
+    font-size: 18px;
+    width: 45px;
+    background-color:#E8FFFF;
+    position:absolute;
+    display:block;
+    width: 45px;
+    bottom:0;
+}
+.allign
+{
+text-align: center;    
+}
+
+.tabs-left{
+position:relative;
+padding-left:0;
+width: 65px;    
+    font-size: 18px;
+    background-color:aqua;
+}
+
+.nav-tabs {
+  float: left;
+  border-bottom: 0;    
+}
+
+book:
+{
+display:block;
+padding-right:30px;   
+margin-left:5px
+}
+.namebook{
+font-color:#112233; 
+margin-left:3px;    
+}
+
+.list-inline
+{
+    list-style: none;
+    padding-left: 0;
+}
+.search_query {
+    width: 640px
+}
+
+.child {
+    width: 25%;
+}
+
+.context {
+    border: 0;
+}
+
+.contextstyle {
+    border-collapse: collapse;
+
+}
+.error{
+ background-color: 
+    color:#fff;
+    width: 100%;
+}
+#backContext  {
+    background-color: #CCDFCC;
+}
+
+.table {
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.table > thead:first-child > tr:first-child > td:nth-child(4) {
+    border: 1px transparent;
+}
+
+.input-group-btn {
+    font-size: 14px;
+    color: #F22613
+}
+.jumbotron{
+background-image: url(/client/img/passau.png);
+background-repeat: no-repeat;
+background-size: cover;
+background-color: rgba(124, 145, 146, 0.5);
+min-height: 250px;
+}
+
+.btn-dis {
+    background-color: #7c9192; /* ou bien #ccc*/
+    border-color: #7c9192;
+    color: #FFFFFF;
+    padding: 3px 8px;
+    
+}
+
+.btn-dis:hover, .btn-dis:focus, .btn-dis:active, .btn-dis.active, .open .dropdown-toggle.btn-dis {
+    background-color: #EC644B;
+    border-color: #EC644B;
+    color: #FFFFFF;
+}
+
+.jumbotron {
+color:#fff;
+}
+.jumbotron button{
+border :0;
+background: #EC644B;
+    width: 100px;
+    height: 40px;
+    border-radius: 2px;
+    font-size: 14px;
+
+}
+.head{
+padding-bottom:20px;
+}
+.head img {
+  float: left;
+}
+
+.head h1 {
+  position: relative;
+  top: 18px;
+  left: 10px;
+}
+.jumb
+{
+padding-left: 120px;
+margin-left: 20px;
+}
+.home{
+padding-left: 40px;
+padding-right: 40px;
+}
+.body-footer {
+    background-color: #CFDDDE;/*#ecf0f1;*/
+    color: #7c9192;
+    padding: 3em 1em 2em;
+    text-align: center;
+    width: 100%;
+}
+
+.mycontainer {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    margin-bottom: 0px;
+    top: 52px;
+    /*background-color: #FEF8DC;*/
+    background-color: #f5f5f5;
+   /* background-image: url(/client/img/jumb1.png);
+    background-repeat: repeat;
+*/}
+
+
+.input[type=checkbox], input[type=radio]::before{
+  background: #0DFF92;
+}
+
+.input[type=checkbox], input[type=radio].label{
+  color: #0DFF92;
+}
+
+.input[type=checkbox], input[type=radio] {
+     border: 5px solid #0DFF92;
+ 
+}
+
+.subject {
+    text-color: #7c9192
+}
+
+.font_icons {
+    font-size: 40px;
+}
+
+.myfooter {
+    margin: auto;
+
+}
+
+.myfooter h4 {
+    margin-left: 20px;
+    color: #EC644B;
+}
+
+.myicons {
+    margin-left: 20px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.container {
+    height: 100%;
+    min-height: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    background-color: #efefef;
+    height: 30px;
+    width: 100%
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /* adding height=100% make the footer overlape container but the main is all displayed erasing this style but the container is as the size of the content !!! weird use ng-class if it is necessary !!*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.mycontainer {
+    flex: 1;
+}
+
+.infotab {
+    display: inline-block
+}
+
+/* styling title of views*/
+
+h1 {
+    color: #4C5B5C;
+    font-size: 28px;
+    font-weight: 300
+}
+
+@-webkit-keyframes change {
+    from {
+        color: #95A5A6
+    }
+    to {
+        color: #F89406
+    }
+}
+
+@-moz-keyframes change {
+    from {
+        color: #95A5A6
+    }
+    to {
+        color: #F89406
+    }
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.td {
+
+    display: inline-block
+}
+
+p {
+    text-align: justify;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+.btn-button-info {
+    background: #FDE7A4;
+    color: #6C7A89;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+.body-404 {
+    background: #ED9A62;
+    color: #fff;
+}
+
+/*d3 styles */
+.line {
+stroke: #666;
+}
+.line text {
+stroke:#666;
+stroke-opacity: .6;
+}
+.node text {
+stroke:#fff;
+cursos:pointer;
+stroke-width :1px;    
+}

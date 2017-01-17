@@ -1,0 +1,30 @@
+{
+  "name": "distat_reading",
+  "authors": [
+    "sahar Mbarek"
+  ],
+  "description": "tool for text visualization",
+  "main": "index.html",
+  "keywords": [
+    "text",
+    "mining",
+    "distant",
+    "reading"
+  ],
+  "ignore": [
+    "**/.*",
+    "client/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-bootstrap": "^2.0.1",
+    "jquery": "^3.1.0",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3",
+    "d3.v3": "https://d3js.org/d3.v3.js"
+  }
+}

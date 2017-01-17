@@ -1,0 +1,7 @@
+{
+  "name": "distant-rich-client",
+  "version": "0.0.1",
+  "devDependencies": {
+    "bower": "~1.7.9"
+  }
+}

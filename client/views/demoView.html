@@ -1,0 +1,73 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <h1>About:<a href="">"{{userquery}}"</a></h1>
+            <div ng-if="loading" class="spinner">
+                <div class="spin s1"></div>
+                <div class="spin s2"></div>
+                <div class="spin s3"></div>
+                <h1> Loading data...</h1>
+            </div>
+
+            <div ng-if="!loading" class="panel">
+                <header class="panel-heading">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                </header>
+                <div  class="panel-body">
+                    <div ng-if="!extractions" class="error">
+                        <p>Sorry, there is no available content for your search !</p>
+                    </div>
+
+                    <table ng-if="extractions" class="table table-responsive table-bordered">
+                        <thead>
+                        <tr>
+
+                            <td>Subject</td>
+                            <td>Predicate</td>
+                            <td>Object</td>
+                            <td class="firstChild"></td>
+
+
+                        </tr>
+                        </thead>
+                        <tbody ng-repeat="core in extractions.extractions">
+                        <tr>
+                            <td class="child" ng-class="{contextstyle: core.contexts}">{{core.subject}}</td>
+                            <td class="child" ng-class="{contextstyle: core.contexts}">{{core.predicate}}</td>
+                            <td class="child" ng-class="{contextstyle: core.contexts}">{{core.object}}</td>
+                            <td class="child" ng-class="{contextstyle: core.contexts}">
+                                <div class="infotab">
+                                    <i uib-popover={{core.original}} popover-trigger="mouseenter">
+                                        <span class="glyphicon glyphicon-eye-open"></span></i>
+                                    <i uib-popover-template="'sourceInfo.html'" popover-trigger="mouseenter"> <span
+                                            class="glyphicon glyphicon-info-sign"></span></i>
+                                    <script type="text/ng-template" id="sourceInfo.html">
+                                        <div>
+                                            <li><i class="fa fa-newspaper-o"></i> {{core.source.article}}</li>
+                                            <li><i class="fa fa-suitcase"></i> {{core.source.source}}</li>
+                                            <li><i class="fa fa-check"></i> Simplified</li>
+                                        </div>
+                                    </script>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr ng-if="core.contexts" class="context" ng-repeat="context in core.contexts">
+                            <td>
+                                <a class="label" href="">context</a>
+                            </td>
+                            <td id="backContext"><i class="fa fa-chevron-right" aria-hidden="true"></i>{{context.subject}}
+                            </td>
+                            <td id="backContext">{{context.predicate}}</td>
+                            <td id="backContext">{{context.object}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
