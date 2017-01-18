@@ -41,9 +41,8 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/controller/homeCrtl.js"></script>
     <script type="text/javascript" src="js/controller/aboutCrtl.js"></script>
-    <script type="text/javascript" src="js/controller/demoCrtl.js"></script>
-    <script type="text/javascript" src="js/controller/howCrtl.js"></script>
- <script type="text/javascript" src="js/controller/test.js"></script>
+    <script type="text/javascript" src="js/controller/uns.js"></script>
+ <script type="text/javascript" src="js/controller/howCrtl.js"></script>
 </head>
 
 <body class="ng-cloak" ng-app="ViZu" ng-cloak>
@@ -56,16 +55,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <!-- change link of Infex later !!!!-->
             <a class="navbar-brand" href="#home"><img src="img/IHPALogosmall.png"></a>
         </div>
         <div class="collapse navbar-collapse" ng-controller="activeNav" id="myNav">
             <ul class="nav navbar-nav navbar-right">
                 <li ng-class="{ active: isActive('/home')}"><a href="#home"><span
                         class="glyphicon glyphicon-home"></span></a></li>
-                 <li ng-class="{ active: isActive('/demo')}"><a href="#demo">Über uns</a></li>
-                 <li ng-class="{ active: isActive('/how')}"><a href="#how">Kontakt</a></li> 
+                 <li ng-class="{ active: isActive('/uns')}"><a href="#uns">Über uns</a></li>
+                 <li ng-class="{ active: isActive('/kontackt')}"><a href="#kontackt">Kontakt</a></li> 
                  <li ng-class="{ active: isActive('/about')}"><a href="#about">Zusatzinfo</a></li>
+                <li><a href="https://www.facebook.com/groups/821681984602400/"><span
+                        class="fa fa-facebook-official"></span></a></li>
             </ul>
            <!-- <div class="col-sm-6 col-md-6">
                 <form class="navbar-form" role="search" ng-controller="Main">
@@ -94,39 +94,32 @@
     <ng-view></ng-view>
 
 </section>
-<footer>  
+<footer class="myfooter">  
         <div class="container">
             <div class="row">
-                <div class="col-xs-6 col-md-4  myfooter">
-                    <img src="img/gear.png" alt="Team">
-               <h4>Team</h4>
-                    <h6><strong>Mr.One</strong>, IntegrationShilfe</h6>
-                    <h6><strong>Mr.Two</strong>, IntegrationShilfe</h6> 
-                    <h6><strong>Mr.Three</strong>, IntegrationShilfe</h6>  
+                <div class="col col-md-12 col-lg-12">
+                    <div class = "centering">
+                    <img src="img/crossroads.png" alt="Team">
+                    <h5><span><i class="fa fa-user-circle" aria-hidden="true"></i></span>
+                        <strong> Ludwig Schmidlehner</strong>, IntegrationShilfe</h5>
+                    <h5><span><i class="fa fa-address-card" aria-hidden="true"></i>
+                        </span>Vorsitzender Integrationshilfe Passau e.V.</h5> 
+                    <h5><span><i class="fa fa-map-marker" aria-hidden="true"></i>
+                        </span>Wilhelm-Niedermayer-Straße 1, 94034 Passau</h5>
+                    <h5><span><i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                        </span> Lschimdlehner@t-online.de</h5>
+                         <h5><span><i class="fa fa-mobile" aria-hidden="true"></i>
+                        </span>(0851) 9 88 64 57</h5>
+                <img src="img/IHPALogomedium.png" alt="logo"> 
+                      <p class="text-center"><strong>Integrationshilfe@Copyright 2017</strong></p>
                 </div>
-                <div class="col-xs-6 col-md-4  myfooter">
-                    <img src="img/chat.png" alt="Contact">
-                    <h4>Contact</h4>
-                    <h6> email_from_domain_name.De</h6>
-                    <h6>email_personal.De</h6>
-                    <!-- here you put the logo of the organization !! -->
-                      <!-- or add here the address of the organization if it is better !! -->                   
+                </div>
+                          
 
-                    <img src="img/IHPALogo.jpg" alt="INTEGRATIONSHILFE logo">   
-                </div>
-                <div class=" col-xs-6 col-md-4  myfooter">
-                     <img src="img/cursor.png" alt="followUs">
-                <h4>Follow Us On</h4>
-                    <div class="myicons">
-                        <a href="www.google.com"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                         <a href="www.google.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
-                        <a href="https://www.youtube.com/watch?v=Zor2X0uoKsM"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-                    </div>
-                </div>
-            </div> 
-             <p class="text-center"><strong>INTEGRATIONSHILFE@Copyright 2017</strong></p>
+                     
             </div>
+            </div> 
+            
                 
     </footer>
 

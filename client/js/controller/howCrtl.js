@@ -1,5 +1,5 @@
 'use strict';
-app.controller('howCrtl', function ($scope) {
+app.controller('kontacktCrtl', function ($scope) {
 
 
 });

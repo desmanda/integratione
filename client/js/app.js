@@ -6,18 +6,18 @@ app.config(function ($routeProvider, $locationProvider) {
         templateUrl: 'views/home.html',
         controller: 'homeCrtl'
 
-    }).when('/demo', {
-        templateUrl: 'views/demo.html',
-        controller: 'test',
+    }).when('/uns', {
+        templateUrl: 'views/uns.html',
+        controller: 'uns',
         reloadOnSearch: false
         
     }).when('/about', {
         templateUrl: 'views/about.html',
         controller: 'aboutCrtl'
         
-  }).when('/how', {
-        templateUrl: 'views/how.html',
-        controller: 'howCrtl'
+  }).when('/kontackt', {
+        templateUrl: 'views/kontackt.html',
+        controller: 'kontacktCrtl'
 
 
 
