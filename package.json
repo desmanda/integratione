@@ -1,7 +1,8 @@
 {
-  "name": "distant-rich-client",
+  "name":"home-page-integrationehilfe",
   "version": "0.0.1",
   "devDependencies": {
-    "bower": "~1.7.9"
+    "bower": "~1.7.9",
+    "express": "^4.13.4"
   }
 }

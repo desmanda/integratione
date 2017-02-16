@@ -95,7 +95,7 @@ margin-left:3px;
     color: #F22613
 }
 .jumbotron{
-background-image: url(/client/img/passau.png);
+background-image: url(../img/passau.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-color: rgba(124, 145, 146, 0.5);

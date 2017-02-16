@@ -1,5 +1,5 @@
 'use strict';
-var app = angular.module('ViZu', ['ngRoute', 'ui.bootstrap', 'ngAnimate']);
+var app = angular.module('ViZu', ['ngRoute', 'ui.bootstrap']);
 
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider.when('/home', {
@@ -15,8 +15,8 @@ app.config(function ($routeProvider, $locationProvider) {
         templateUrl: 'views/about.html',
         controller: 'aboutCrtl'
         
-  }).when('/kontackt', {
-        templateUrl: 'views/kontackt.html',
+  }).when('/kontakt', {
+        templateUrl: 'views/kontakt.html',
         controller: 'kontacktCrtl'
 
 

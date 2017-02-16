@@ -3,13 +3,10 @@
   "authors": [
     "sahar Mbarek"
   ],
-  "description": "tool for text visualization",
+  "description": "homepage for Integratione Hilfe",
   "main": "index.html",
   "keywords": [
-    "text",
-    "mining",
-    "distant",
-    "reading"
+    "integration"
   ],
   "ignore": [
     "**/.*",
@@ -24,7 +21,6 @@
     "angular-bootstrap": "^2.0.1",
     "jquery": "^3.1.0",
     "bootstrap": "^3.3.7",
-    "font-awesome": "^4.6.3",
-    "d3.v3": "https://d3js.org/d3.v3.js"
+    "font-awesome": "^4.6.3"
   }
 }
