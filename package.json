@@ -5,7 +5,8 @@
  "main": "server.js",    
   "devDependencies": {
     "bower": "~1.7.9",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "angularjs-server" : "0.0.31"  
   },
 "scripts" : {
     "start": "node server.js"
