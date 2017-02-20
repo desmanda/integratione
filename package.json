@@ -1,9 +1,14 @@
 {
-  "name":"home-page-integrationehilfe",
-  "version": "0.0.1",
-  "main": "server.js",
+  "name":"Integrationehilfe",
+  "version": "1.0.0",
+    "author": "sahar mbarek",
+ "main": "server.js",    
   "devDependencies": {
     "bower": "~1.7.9",
     "express": "^4.13.4"
-  }
+  },
+"scripts" : {
+    "start": "node server.js"
+}
+        
 }
