@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "author": "sahar mbarek",
   "main": "server.js",    
-  "devDependencies": {
+  "dependencies": {
     "bower": "~1.7.9",
-    "express": "^4.13.4",
-    "angularjs-server" : "0.0.31"  
+    "express": "~4.13.4" 
   },
 "scripts" : {
     "start": "node server.js"
